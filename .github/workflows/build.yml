@@ -5,13 +5,13 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout proyek
         uses: actions/checkout@v4
 
       - name: Pasang Java
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: "17"
@@ -19,22 +19,20 @@ jobs:
       - name: Pasang Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Pasang build-tools
-        run: sdkmanager "build-tools;34.0.0" "platform-tools"
-
       - name: Unduh Godot 4.7.2
         run: |
           wget -q https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
           unzip -q Godot_v4.7.2-stable_linux.x86_64.zip
-          sudo mv Godot_v4.7.2-stable_linux.x86_64 /usr/local/bin/godot
-          sudo chmod +x /usr/local/bin/godot
+          chmod +x Godot_v4.7.2-stable_linux.x86_64
+          mv Godot_v4.7.2-stable_linux.x86_64 godot_bin
 
       - name: Unduh export templates
         run: |
           wget -q https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz
+          mkdir -p tpz_tmp
           unzip -q Godot_v4.7.2-stable_export_templates.tpz -d tpz_tmp
           mkdir -p "$HOME/.local/share/godot/export_templates/4.7.2.stable"
-          mv tpz_tmp/templates/* "$HOME/.local/share/godot/export_templates/4.7.2.stable/"
+          cp -r tpz_tmp/templates/* "$HOME/.local/share/godot/export_templates/4.7.2.stable/"
 
       - name: Buat debug keystore
         run: |
@@ -47,12 +45,12 @@ jobs:
           echo "GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD=android" >> $GITHUB_ENV
 
       - name: Import aset Godot
-        run: godot --headless --import || true
+        run: ./godot_bin --headless --import || true
 
       - name: Export APK debug
         run: |
           mkdir -p build
-          godot --headless --export-debug "Android" build/ShiftRoad.apk
+          ./godot_bin --headless --export-debug "Android" build/ShiftRoad.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
