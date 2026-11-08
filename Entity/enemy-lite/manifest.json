@@ -1,0 +1,83 @@
+{
+  "assets": [
+    {
+      "name": "ga024_lurcher",
+      "provenance": {
+        "source": "MPFB2 2.0.18 bundled base mesh",
+        "macro": {
+          "gender": 0.55,
+          "age": 0.5,
+          "muscle": 0.18,
+          "weight": 0.28,
+          "proportions": 0.5,
+          "height": 0.52,
+          "cupsize": 0,
+          "firmness": 0.5,
+          "race": {
+            "asian": 0.33,
+            "caucasian": 0.33,
+            "african": 0.33
+          }
+        },
+        "targets": {
+          "head/head-age-incr": 0.22,
+          "chin/chin-jaw-drop-incr": 0.2,
+          "cheek/l-cheek-volume-decr": 0.32,
+          "cheek/r-cheek-volume-decr": 0.32,
+          "eyes/l-eye-bag-incr": 0.3,
+          "eyes/r-eye-bag-incr": 0.3
+        },
+        "height_before_hunch": 1.7,
+        "source_body_triangles": 26756,
+        "decimate_ratio": 0.09156824637464495,
+        "reduction_method": "curvature-driven collapse",
+        "weight_method": "Blender automatic heat weights; top 4 normalized",
+        "reduction_triangles": 2819
+      },
+      "variant": "lurcher",
+      "triangles": 2819,
+      "bones": 18,
+      "bounds": [
+        [
+          -0.33797499537467957,
+          -0.373405784368515,
+          0.0
+        ],
+        [
+          0.3364459276199341,
+          0.11522114276885986,
+          1.6542887687683105
+        ]
+      ],
+      "clips": {
+        "Idle": 49,
+        "Walk": 25,
+        "Chase": 17,
+        "Attack": 25,
+        "Attack_Heavy": 37,
+        "Alert": 37,
+        "Hit": 13,
+        "Death": 49
+      },
+      "skeleton": "biped",
+      "design": {
+        "torso_lean_degrees": 17.346433908929303,
+        "shoulder_drop": 0.07099318504333496,
+        "right_hand_lower": 0.07099312543869019,
+        "right_hand_forward": 0.02109435200691223,
+        "shoes": {
+          "L": {
+            "length": 0.2848539724946022,
+            "height": 0.1599999964237213
+          },
+          "R": {
+            "length": 0.28465506434440613,
+            "height": 0.1599999964237213
+          }
+        }
+      },
+      "texture": "ga024-atlas.png"
+    }
+  ],
+  "fps": 24
+}

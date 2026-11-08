@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b88p272i6mhjv"
+path="res://.godot/imported/Car_Acceleration_2.ogg-742bd80db72c6745dcce16f21743a63e.oggvorbisstr"
+
+[deps]
+
+source_file="res://Cutscene/Asset/Car/Sound effects/Car_Acceleration_2.ogg"
+dest_files=["res://.godot/imported/Car_Acceleration_2.ogg-742bd80db72c6745dcce16f21743a63e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

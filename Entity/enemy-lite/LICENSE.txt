@@ -1,0 +1,28 @@
+Tri Hard Studio - Asset License
+https://tri-hard-studio.itch.io
+
+Thank you for downloading! This license applies to every file in this pack
+(free sample or paid version).
+
+YOU CAN
+- Use the assets in commercial and non-commercial projects:
+  games, apps, videos, streams, animations, prototypes and game jams.
+- Modify, recolor, combine and adapt the assets as you like.
+- Use them in as many projects as you want. No time limit.
+- Ship them inside your compiled or packaged project.
+
+YOU CANNOT
+- Resell, redistribute, sublicense or share the asset files themselves,
+  modified or not, on their own or as part of another asset pack,
+  template, kit or library.
+- Upload the asset files to any marketplace or asset store.
+- Claim the assets as your own original creation.
+
+CREDIT
+Credit is not required, but always appreciated:
+"Assets by Tri Hard Studio (tri-hard-studio.itch.io)"
+
+NO WARRANTY
+The assets are provided "as is", without warranty of any kind.
+
+Questions? Leave a comment on the itch.io page.

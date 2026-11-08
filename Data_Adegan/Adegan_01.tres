@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ArsipAdegan" format=3 uid="uid://c8101axdoyltn"]
+
+[ext_resource type="Script" uid="uid://b53a3khya3ynu" path="res://ArsipAdegan.gd" id="1_mackj"]
+
+[resource]
+script = ExtResource("1_mackj")
+teks_narasi = "Halahhh kontol"
+target_marker = NodePath("KameraPabrik")
+tipe_transisi = 1
+nama_animasi = "Cihuy"
+metadata/_custom_type_script = "uid://b53a3khya3ynu"

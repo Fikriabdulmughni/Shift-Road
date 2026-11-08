@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cpxsrsl1iwufj"]
+
+[ext_resource type="Texture2D" uid="uid://c0on7a86pgkog" path="res://Teksture/PaintedPlaster006.png" id="1_xybpr"]
+
+[resource]
+albedo_color = Color(0.23286086, 0.23286086, 0.23286083, 1)
+normal_enabled = true
+normal_scale = 5.73
+normal_texture = ExtResource("1_xybpr")
+uv1_scale = Vector3(0.43, 0.43, 0.43)
+uv1_triplanar = true
+uv1_world_triplanar = true
